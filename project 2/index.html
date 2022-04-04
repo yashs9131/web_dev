@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
 <!--    Cool nandan here -->
-<!-- daksh was here  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>getoeat.com</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: )" href="css/phone.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bree+Serif&display=swap" rel="stylesheet">
@@ -120,7 +118,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="center">
             Copyright &copy; www.myOnlineMeal.com. All rights reserved!
         </div>
@@ -129,11 +127,23 @@
     <script src="/js.js"></script>
 
     <script>
-        var loader= document.getElementById("preloader")
-
+        let loader= document.getElementById("preloader")
+        const lowerContent1 = document.getElementById('services-container');
+        const lowerContent2 = document.getElementById('client-section');
+        const lowerContent3 = document.getElementById('contact');
+        const lowerContent4 = document.getElementById('footer');
+        lowerContent1.classList.add('hidden');
+        lowerContent2.classList.add('hidden');
+        lowerContent3.classList.add('hidden');
+        lowerContent4.classList.add('hidden');
         window.addEventListener("load",function(){
             loader.style.display = "none";
+            lowerContent1.classList.remove('hidden');
+            lowerContent2.classList.remove('hidden');
+            lowerContent3.classList.remove('hidden');
+            lowerContent4.classList.remove('hidden');
         })
+
     </script>
     <div id="invi">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
