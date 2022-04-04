@@ -306,3 +306,7 @@ footer {
 #invi {
     display: none;
 }
+
+.hidden {
+    display: none;
+}
