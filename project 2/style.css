@@ -1,0 +1,308 @@
+/* CSS reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar  */
+#navbar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+/* navigation bar:logo and image  */
+#logo {
+    margin: 6px 13px;
+}
+
+#logo img {
+    height: 40px;
+    margin: 2px 5px;
+}
+
+
+/* navigation bar:lsit styling  */
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 1000;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.0rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/* HOME SECTION  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 703px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 717px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+#home p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* fonnts i am gonna use 
+
+font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Bree Serif', serif;
+
+services section  */
+#services {
+    margin: 34px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 24px 1px;
+    margin: 28px 13px;
+    border-radius: 20px;
+    background-color: #f3eeee;
+
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* clients section  */
+
+#client-section {
+    position: relative;
+    height: 322px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../up.jpg);
+    width: 100%;
+    height: 322px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 37px;
+}
+
+#clients img {
+    height: 112px;
+}
+
+
+/* contact section  */
+
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(../f.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+
+footer {
+    background: black;
+    color: white;
+}
+
+
+/* utility class  */
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+
+}
+
+
+/* animated text  */
+
+.ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+    top: 0;
+    left: 0;
+}
+
+.ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+
+#preloader {
+    /* background:rgb(255, 255, 255) url(../Hourglass.gif) no-repeat center center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden !important;*/
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#invi {
+    display: none;
+}
